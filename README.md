@@ -8,19 +8,22 @@ Windows-only Python utility to convert EMF (Enhanced Metafile) files to PNG usin
 - Dependencies: pillow, pywin32
 
 Install:
-pip install pillow pywin32
+Install the package from **PyPI**:
+
+```bash
+pip install emf-to-png-convertor
+```
 
 ## Files
 main.py — EMF to PNG converter implementation
 
 ## Basic Usage
-from main import EMFToPNGConverter
+```python
+from emf_to_png import EMFToPNGConverter
 
 conv = EMFToPNGConverter()
-conv.emf_file_to_png_file(
-    "sample/input.emf",
-    "output/output.png"
-)
+conv.emf_file_to_png_file("input.emf", "output.png")
+```
 
 ## Features
 - Accurate EMF rendering via Windows GDI

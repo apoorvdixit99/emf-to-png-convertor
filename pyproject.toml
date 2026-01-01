@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emf-to-png-convertor"
+version = "0.1.0"
+description = "Windows-only EMF to PNG converter using Win32 GDI"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Apoorv Dixit" }]
+
+dependencies = [
+  "Pillow>=10",
+  "pywin32>=306"
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows"
+]
+
+[project.urls]
+Homepage = "https://github.com/apoorvdixit99/emf-to-png-convertor"
